@@ -26,6 +26,10 @@ class TestCelestoReports(unittest.TestCase):
     def setUp(self):
         init_db()
 
+    def tearDown(self):
+        from app.database import close_db
+        close_db()
+
     def test_docker_compose_and_dockerfile(self):
         compose_path = get_path("docker-compose.yml")
         dockerfile_path = get_path("Dockerfile")
@@ -370,6 +374,12 @@ class TestCelestoReports(unittest.TestCase):
                 self.assertEqual(res.status_code, 201)
 
                 res = client.post("/api/runs", json=bad_target)
+                self.assertEqual(res.status_code, 400)
+
+                res = client.post("/api/runs", json=bad_state)
+                self.assertEqual(res.status_code, 400)
+
+                res = client.post("/api/runs", json=bad_name)
                 self.assertEqual(res.status_code, 400)
         except ImportError:
             pass

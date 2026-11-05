@@ -27,3 +27,4 @@
   ],
   "breakage_notes": "Observed microVM memory allocation pressure and API rate limits during parallel initialization across 6 concurrent sandboxes; handled cleanly via jittered exponential backoff without name collisions or state cross-contamination."
 }
+

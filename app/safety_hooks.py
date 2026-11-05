@@ -57,3 +57,4 @@ def pre_exec_hook(sandbox_name: str, command: str) -> None:
     allowed, reason = audit_command(sandbox_name, command)
     if not allowed:
         raise CommandBlockedError(f"[SAFETY HOOK BLOCKED] Sandbox '{sandbox_name}': {reason} | Command: {command}")
+

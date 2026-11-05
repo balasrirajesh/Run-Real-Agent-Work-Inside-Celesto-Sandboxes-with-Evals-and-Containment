@@ -5,3 +5,4 @@
   "rationale": "In untrusted code evaluation and package detonation, mid-task failure during dependency compilation or test execution (step 7) frequently leaves dirty filesystems, mutated libraries, or partial socket bindings. Applying a snapshot-based rollback policy restores the microVM to the clean pre-execution checkpoint captured at step 6 in under 350ms, eliminating the overhead of cold VM provisioning while guaranteeing absolute filesystem hygiene and deterministic replay.",
   "trace_path": "reports/failure_trace.jsonl"
 }
+

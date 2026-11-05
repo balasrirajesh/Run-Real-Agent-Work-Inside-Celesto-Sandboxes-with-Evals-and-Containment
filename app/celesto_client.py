@@ -122,3 +122,4 @@ class CelestoSandboxManager:
         if not self.is_cleaned_up:
             self._update_state("deleted")
             self.is_cleaned_up = True
+

@@ -9,3 +9,4 @@
 {"step": 8, "action": "apply_memory_sanitizer_patch", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Sanitized isolation wrapper injected"}
 {"step": 9, "action": "rerun_exploit_reproduction", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Minimal failing test executed deterministically"}
 {"step": 10, "action": "export_reproduction_report", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Report generated; microVM stopped and destroyed cleanly"}
+

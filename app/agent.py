@@ -97,3 +97,4 @@ class DetonationAgent:
         }
         entry.update(kwargs)
         self.trace.append(entry)
+

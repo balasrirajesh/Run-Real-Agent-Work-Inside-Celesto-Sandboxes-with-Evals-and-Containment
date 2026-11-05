@@ -35,6 +35,16 @@ def get_connection() -> Tuple[Any, str]:
         _MEMORY_CONN.row_factory = sqlite3.Row
     return _MEMORY_CONN, "sqlite"
 
+def close_db():
+    """Explicitly closes local memory database connection during testing teardown."""
+    global _MEMORY_CONN
+    if _MEMORY_CONN is not None:
+        try:
+            _MEMORY_CONN.close()
+        except Exception:
+            pass
+        _MEMORY_CONN = None
+
 def init_db():
     conn, engine = get_connection()
     try:

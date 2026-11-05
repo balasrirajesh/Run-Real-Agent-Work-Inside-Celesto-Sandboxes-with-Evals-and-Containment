@@ -19,3 +19,4 @@ CREATE INDEX IF NOT EXISTS idx_runs_state ON runs(state);
 INSERT INTO runs (run_id, sandbox_name, problem_id, state, execution_target)
 VALUES ('run-seeddemo1', 'sbx-seeddemo1', 'prob-seeddemo', 'deleted', 'celesto_sandbox')
 ON CONFLICT (run_id) DO NOTHING;
+

@@ -33,3 +33,4 @@ Three runs encountered task-level exceptions during untrusted code execution. In
 * **Host Contamination**: 0 bytes written to host disk; 0 host processes spawned outside Docker/Celesto boundaries.
 * **Credential Exposure**: Synthetic canary tokens remained uncompromised.
 * **Orphaned Sandboxes**: 0 orphaned sandboxes. All 20 sandboxes were explicitly marked `deleted` in the run ledger and verified absent from the microVM hypervisor.
+

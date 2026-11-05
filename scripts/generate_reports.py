@@ -78,3 +78,4 @@ with open("reports/lifecycle.json", "w", encoding="utf-8") as f:
 
 print(f"Generated logs/commands.jsonl with {len(commands_lines)} lines")
 print(f"Generated reports/lifecycle.json with {len(sandbox_names)} unique sandbox names")
+
