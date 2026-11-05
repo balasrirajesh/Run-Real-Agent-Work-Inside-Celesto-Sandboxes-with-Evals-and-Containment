@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Local testing databases
+*.db
+*.sqlite3
+
+# OS metadata
+.DS_Store
+Thumbs.db

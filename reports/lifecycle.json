@@ -1,0 +1,30 @@
+{
+  "cleanup_on_success": true,
+  "cleanup_on_failure": true,
+  "cleanup_on_interrupt": true,
+  "sandbox_names": [
+    "sbx-relrun0001",
+    "sbx-relrun0002",
+    "sbx-relrun0003",
+    "sbx-relrun0004",
+    "sbx-relrun0005",
+    "sbx-relrun0006",
+    "sbx-relrun0007",
+    "sbx-relrun0008",
+    "sbx-relrun0009",
+    "sbx-relrun0010",
+    "sbx-relrun0011",
+    "sbx-relrun0012",
+    "sbx-relrun0013",
+    "sbx-relrun0014",
+    "sbx-relrun0015",
+    "sbx-relrun0016",
+    "sbx-relrun0017",
+    "sbx-relrun0018",
+    "sbx-relrun0019",
+    "sbx-relrun0020",
+    "sbx-seccontain01",
+    "sbx-recovery01",
+    "sbx-lifecyc001"
+  ]
+}

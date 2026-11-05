@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "snapshots",
+      "why": "Snapshots provide atomic microVM memory and disk checkpointing before executing untrusted packages or flaky reproduction scripts, enabling instant zero-loss rollback to a clean state when step 7 fails.",
+      "evidence_path": "reports/failure_policy.json"
+    },
+    {
+      "id": "safety_hooks",
+      "why": "Safety hooks inspect and validate all terminal commands against malicious patterns and data leakage vectors prior to microVM execution, preemptively blocking prompt-injected exfiltration attempts.",
+      "evidence_path": "logs/commands.jsonl"
+    },
+    {
+      "id": "network_policy",
+      "why": "Network egress policies enforce strict zero-outbound rules or domain-restricted firewalls around untrusted detonation microVMs, preventing malicious packages or prompt injections from exfiltrating environment credentials.",
+      "evidence_path": "reports/containment.json"
+    }
+  ]
+}

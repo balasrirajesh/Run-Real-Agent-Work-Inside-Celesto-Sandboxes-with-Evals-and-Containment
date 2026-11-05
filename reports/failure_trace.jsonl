@@ -1,0 +1,11 @@
+{"step": 1, "action": "create_microvm", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "MicroVM provisioned and ready"}
+{"step": 2, "action": "prepare_toolchain", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Base Python and build essentials initialized"}
+{"step": 3, "action": "clone_untrusted_repo", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Target repository cloned into /workspace/repo"}
+{"step": 4, "action": "verify_test_harness", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Test runner pytest discovered"}
+{"step": 5, "action": "install_dependencies", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Pip dependencies installed in virtual environment"}
+{"step": 6, "action": "create_snapshot", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Snapshot checkpoint ckpt-step6-pre-risky taken"}
+{"step": 7, "action": "execute_risky_exploit_test", "status": "failed", "sandbox_name": "sbx-recovery01", "error": "Segmentation fault / corrupted memory in untrusted C-extension", "failed_step": 7}
+{"event": "policy_applied", "policy": "rollback", "failed_step": 7, "total_steps": 10, "sandbox_name": "sbx-recovery01", "snapshot_id": "ckpt-step6-pre-risky", "details": "Rolled back guest microVM state to clean snapshot ckpt-step6-pre-risky in 312ms"}
+{"step": 8, "action": "apply_memory_sanitizer_patch", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Sanitized isolation wrapper injected"}
+{"step": 9, "action": "rerun_exploit_reproduction", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Minimal failing test executed deterministically"}
+{"step": 10, "action": "export_reproduction_report", "status": "succeeded", "sandbox_name": "sbx-recovery01", "details": "Report generated; microVM stopped and destroyed cleanly"}

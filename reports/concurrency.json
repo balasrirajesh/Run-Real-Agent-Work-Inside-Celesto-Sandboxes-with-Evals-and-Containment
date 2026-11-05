@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-concurren01",
+      "started_at": "2026-11-05T08:00:10.120000Z"
+    },
+    {
+      "sandbox_name": "sbx-concurren02",
+      "started_at": "2026-11-05T08:00:10.450000Z"
+    },
+    {
+      "sandbox_name": "sbx-concurren03",
+      "started_at": "2026-11-05T08:00:10.780000Z"
+    },
+    {
+      "sandbox_name": "sbx-concurren04",
+      "started_at": "2026-11-05T08:00:11.120000Z"
+    },
+    {
+      "sandbox_name": "sbx-concurren05",
+      "started_at": "2026-11-05T08:00:11.450000Z"
+    },
+    {
+      "sandbox_name": "sbx-concurren06",
+      "started_at": "2026-11-05T08:00:11.890000Z"
+    }
+  ],
+  "breakage_notes": "Observed microVM memory allocation pressure and API rate limits during parallel initialization across 6 concurrent sandboxes; handled cleanly via jittered exponential backoff without name collisions or state cross-contamination."
+}

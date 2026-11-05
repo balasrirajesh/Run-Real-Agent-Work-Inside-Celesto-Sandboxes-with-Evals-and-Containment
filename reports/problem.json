@@ -1,0 +1,6 @@
+{
+  "who": "Security engineers and AI researchers auditing untrusted dependencies, issues, and PR submissions",
+  "agent_work": "The agent safely clones untrusted repositories, installs suspicious packages, executes reproduction suites in microVMs, and intercepts destructive or exfiltrating operations",
+  "proof_output": "Deterministic vulnerability detonation audit log, reproduction test suite, and ledger run records with zero host leakage",
+  "idea_source": "idea_bank"
+}
