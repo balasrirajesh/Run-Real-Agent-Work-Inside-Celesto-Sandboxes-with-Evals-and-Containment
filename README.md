@@ -208,6 +208,3 @@ pytest tests/test_reports.py -v
 
 ## AI Assistant Disclosure
 * Model used for design consultation and code scaffolding: **Google Gemini 3.8 Flash**.
-
-#   R u n - R e a l - A g e n t - W o r k - I n s i d e - C e l e s t o - S a n d b o x e s - w i t h - E v a l s - a n d - C o n t a i n m e n t  
- 
